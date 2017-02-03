@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneBall : MonoBehaviour {
 
 	public Text txtScore;
-	public Text txtAttack;
 	void Start () {
 		
 	}
@@ -17,14 +16,12 @@ public class SceneBall : MonoBehaviour {
 	}
 
 	int score = 0 ;
-	int Attack = 0 ;
 	public void DoPushButton(){
 		score++;
-		Attack+= 2;
 		txtScore.text = "Score :" + score.ToString ();
-		txtAttack.text = "Attack :" + Attack.ToString ();
 	}
 	public void DoChangeScene(){
 		SceneManager.LoadScene (1);
-	}
+
+    }
 }
